@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ar" >
+<head>
+  <meta charset="UTF-8">
+  <title> متجـر للورد</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+  
+ <select id="filter" onchange="filterProducts()">
+    <option value="all">كل المنتجات</option>
+    <option value="roses">ورد</option>
+    <option value="gift">هدايا</option>
+  </select>
+  <h1>🌸 متجــر للورد</h1>
+  
+</header>
+
+<main id="products">
+  
+</main>
+<aside class="cart-box">
+  
+  <h2>🧺 سلة المشتريات 
+    <span id="cart-count"></span></h2>
+  <ul id="cart-items"></ul>
+  <h3>الإجمالي: <span id="total">0</span> ريال</h3>
+  <button onclick="goToCheckout()" >💳 إتمام الدفع</button>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

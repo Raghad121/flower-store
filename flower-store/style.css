@@ -1,0 +1,137 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #fff5f8;
+ 
+}
+
+header {
+  background: rgb(242, 204, 210);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+h1 {
+  margin: 0 ;
+  
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px #ddd;
+  overflow:hidden;
+  transition: 0.3;
+}
+
+.card img {
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: #fff;
+  background: #f9f9f9;
+  padding: 5px;
+  transition: transform 0.4s ease;
+}
+
+button {
+  background: rgb(210, 203, 203);
+  color: rgb(67, 66, 66);
+  padding: 4px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cart-box {
+  text-align: right;
+  right: 10px;
+  top: 200px;
+  background: #fff5f8;
+  border-radius: 10px solid #ddd;
+  padding: 20px;
+  
+ 
+}
+.cart-box button {
+  background: rgb(245, 106, 106);
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  border-radius: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  display: block;
+
+}
+
+#cart-items{
+  list-style:none;
+  padding:0;
+
+}
+
+#cart-items li {
+  display: flex;
+  margin-bottom: 8px;
+  flex-direction: row-reverse;
+  background: white;
+}
+.checkout {
+ 
+  max-width: 400px;
+  margin: 80px auto;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.checkout input {
+  padding: 10px;
+  margin: 8px 0;
+  text-align: right;
+  width: 90%;
+}
+
+.checkout button {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 97%;
+}
+.card:hover img{
+  transform: scale(1.1);
+ 
+}
+
+.card:hover{
+  box-shadow:0 10px 30px rgba(0,0,0,0.15)
+}
+
+.delete-btn {
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer;
+  font-size: 18px;
+  color:black;
+  padding: 0;
+  
+}
+
+
